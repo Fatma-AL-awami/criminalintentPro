@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:id="@+id/linearLayout">
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_title_label"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_conversion_absoluteWidth="45dp" />
+    <EditText
+        android:id="@+id/crime_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/crime_title_hint"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_editor_absoluteY="32dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_conversion_absoluteWidth="208dp" />
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_details_label"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="77dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_conversion_absoluteWidth="63dp" />
+    <Button
+        android:id="@+id/crime_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Wed Nov 14 11:56 EST 2018"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_editor_absoluteY="109dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_conversion_absoluteWidth="208dp" />
+    <CheckBox
+        android:id="@+id/crime_solved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_solved_label"
+        tools:layout_conversion_absoluteHeight="32dp"
+        tools:layout_editor_absoluteY="157dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_conversion_absoluteWidth="74dp" />
+</LinearLayout>
+
