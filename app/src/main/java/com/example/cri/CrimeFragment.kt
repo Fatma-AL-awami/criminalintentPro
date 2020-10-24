@@ -121,7 +121,7 @@ class CrimeFragment: Fragment(),DatePickerFragment.Callbacks,TimePickerFragment.
                val cal1=calender.get(Calendar.HOUR_OF_DAY)
                val cal2=calender.get(Calendar.MINUTE)
 
-                TimePickerDialog(context, timeSetListener, cal1, cal2, true).show()
+      TimePickerDialog(context, timeSetListener, cal1, cal2, true).show()
             }
             return view
 
