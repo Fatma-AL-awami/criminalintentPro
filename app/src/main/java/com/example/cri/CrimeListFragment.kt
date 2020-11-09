@@ -17,16 +17,18 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cri.CrimeListFragment.Companion.newInstance
 import kotlinx.android.synthetic.main.crime_list_fragment.*
+import java.text.DateFormat
 import java.util.*
 
 class CrimeListFragment : Fragment() {
     private lateinit var crimeRecyclerView: RecyclerView
     var empty:Boolean = false
     private var adapter: CrimeAdapter? = CrimeAdapter(emptyList())
+
     private val crimeListViewModel: CrimeListViewModel by lazy {
         ViewModelProviders.of(this).get(CrimeListViewModel::class.java)
     }
-    
+
     private var callbacks: Callbacks? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -130,7 +132,10 @@ class CrimeListFragment : Fragment() {
 
             this.crime = crime
             titleTextView.text = this.crime.title
-            dateTextView.text = this.crime.date.toString()
+           // dateTextView.text = this.crime.date.toString()
+            dateTextView.text =
+                DateFormat.getDateInstance(DateFormat.LONG)
+                    .format(this.crime.date).toString()
             solvedImageView.visibility = if (crime.isSolved) {
                 View.VISIBLE
             } else {
