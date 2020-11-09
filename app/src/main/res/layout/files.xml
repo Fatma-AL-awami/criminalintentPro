@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <paths tools:ignore="MissingConstraints">
+        <files-path android:name="crime_photos" android:path="."/>
+    </paths>
+</androidx.constraintlayout.widget.ConstraintLayout>
