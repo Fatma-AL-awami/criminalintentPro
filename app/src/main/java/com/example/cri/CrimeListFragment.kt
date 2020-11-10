@@ -141,6 +141,11 @@ class CrimeListFragment : Fragment() {
             } else {
                 View.GONE
             }
+
+
+
+
+
         }
 
 

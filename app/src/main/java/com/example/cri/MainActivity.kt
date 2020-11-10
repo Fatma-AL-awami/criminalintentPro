@@ -6,6 +6,7 @@ import android.view.View
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.crime_list_fragment.*
 import java.util.*
 
      class MainActivity : AppCompatActivity() ,CrimeListFragment.Callbacks {
@@ -16,11 +17,11 @@ import java.util.*
                 val currentFragment = supportFragmentManager.findFragmentById(R.id.fragment_container)
                 if (currentFragment == null) {
                     val fragment = CrimeFragment()
-
                     supportFragmentManager.beginTransaction()
                         .add(R.id.fragment_container, CrimeListFragment.newInstance())
                         .commit()
                 }
+
             }
 
          override fun onCrimeSelected(crimeId: UUID) {
